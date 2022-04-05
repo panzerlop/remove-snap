@@ -1,5 +1,16 @@
 #!/bin/bash
 
+echo "Copy the following commands once complete and past them in your Terminal one by one to install Firefox .deb"
+echo " "
+echo "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F"
+echo " "
+echo "sudo apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubuntu jammy main"
+echo " "
+echo "sudo apt update"
+echo " "
+echo "sudo apt install firefox"
+echo " "
+
 echo "Removing snap..."
 
 # Stop the daemon
@@ -23,17 +34,5 @@ sudo chown root:root /etc/apt/preferences.d/no-snap.pref
 
 # done
 echo "Snap removed"
-
-echo "Copy the following commands and past them in your Terminal one by one to install Firefox .deb"
-echo " "
-echo "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F"
-echo " "
-echo "sudo apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubuntu jammy main"
-echo " "
-echo "sudo apt update"
-echo " "
-echo "sudo apt install firefox"
-echo " "
-
 
 pkill -f firefox
