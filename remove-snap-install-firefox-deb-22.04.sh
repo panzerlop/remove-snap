@@ -21,6 +21,8 @@ EOF
 sudo mv no-snap.pref /etc/apt/preferences.d/
 sudo chown root:root /etc/apt/preferences.d/no-snap.pref
 
+# Could add a user input choice to install Firefox via Flatpack here...
+
 pkill -f firefox
 
 sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -42,7 +44,7 @@ echo " & "
 echo " "
 echo " Firefox Flatpak installed "
 echo " "
-echo " To run Firefox from Terminal type the following:"
+echo " To run Firefox from Terminal type the following: "
 echo " "
 echo " flatpak run org.mozilla.firefox "
 echo " "
