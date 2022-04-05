@@ -1,4 +1,4 @@
-Remove Snap and install Firefox .deb for Ubuntu Jammy 22.04 LTS
+Remove Snap and install Firefox .deb for Ubuntu Jammy 22.04 LTS, part of a longer post-install script ( WIP )
 
 **Usage**
 
