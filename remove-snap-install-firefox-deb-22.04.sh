@@ -23,3 +23,15 @@ sudo chown root:root /etc/apt/preferences.d/no-snap.pref
 
 # done
 echo "Snap removed"
+
+pkill -f firefox
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F
+
+sudo apt-add-repository "deb http://ppa.launchpad.net/ubuntu-mozilla-security/ppa/ubuntu jammy main"
+
+sudo apt update
+
+sudo apt install firefox
+
+echo "Firefox .deb installed"
