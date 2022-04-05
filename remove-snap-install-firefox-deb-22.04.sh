@@ -24,7 +24,6 @@ sudo chown root:root /etc/apt/preferences.d/no-snap.pref
 # done
 echo "Snap removed"
 
-pkill -f firefox
 echo "Copy the following commands and past them in your Terminal one by one to install Firefox .deb"
 echo " "
 echo "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A6DCF7707EBC211F"
@@ -35,3 +34,6 @@ echo "sudo apt update"
 echo " "
 echo "sudo apt install firefox"
 echo " "
+
+
+pkill -f firefox
