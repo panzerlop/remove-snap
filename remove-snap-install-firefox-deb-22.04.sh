@@ -26,6 +26,10 @@ echo "Snap removed"
 
 pkill -f firefox
 
+sudo add-apt-repository ppa:alexlarsson/flatpak
+      
+sudo apt update
+      
 sudo apt install flatpak -y
 
 flatpak install flathub org.mozilla.firefox
@@ -34,3 +38,4 @@ flatpak run org.mozilla.firefox
 
 echo " "
 echo " Firefox Flatpak installed "
+echo " "
