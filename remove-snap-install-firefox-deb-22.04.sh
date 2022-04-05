@@ -55,8 +55,6 @@ install_flatpak() {
   read -r -p "InstallFlatpak backend and add flathub? (y/n) " install_flatpak
 	  if [ "${install_flatpak}" = "y" ]; then
 
-sudo add-apt-repository ppa:alexlarsson/flatpak
-
 sudo apt update
       
 sudo apt install flatpak -y
@@ -100,7 +98,7 @@ ending() {
 }
 
 echo ""
-echo "22.04 Jelly Jammyfish easy Post-Install guided customisation script"
+echo "22.04 Disable Snap & Install Flatpak & Firefox Script"
 echo ""
 cat << "EOF"
                .-.
