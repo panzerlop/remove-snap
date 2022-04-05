@@ -68,7 +68,7 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 install_firefox() {
 
-  read -r -p "InstallFlatpak backend and add flathub? (y/n) " install_firefox
+  read -r -p "Install the Firefox Flatpak? (y/n) " install_firefox
 	  if [ "${install_firefox}" = "y" ]; then
 	  
 flatpak install flathub org.mozilla.firefox
