@@ -36,8 +36,11 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 flatpak install flathub org.mozilla.firefox
 
-flatpak run org.mozilla.firefox
 
 echo " "
 echo " Firefox Flatpak installed "
+echo " "
+echo " To run Firefox from Terminal type the following:"
+echo " "
+echo " flatpak run org.mozilla.firefox "
 echo " "
