@@ -11,11 +11,6 @@ script_checks() {
 
  sudo apt-get update
  
- echo ""
-      if ! ps -p 1 | grep systemd &>/dev/null; then
-      echo "This script can only be used with systemd."
-      exit 1
-    fi
 echo ""
     if [[ "$(id -u)" -ne 0 ]]; then
       echo "This script needs to be run as root (sudo)."
