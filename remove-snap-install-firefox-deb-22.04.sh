@@ -21,9 +21,6 @@ EOF
 sudo mv no-snap.pref /etc/apt/preferences.d/
 sudo chown root:root /etc/apt/preferences.d/no-snap.pref
 
-# done
-echo "Snap removed"
-
 pkill -f firefox
 
 sudo add-apt-repository ppa:alexlarsson/flatpak
@@ -36,7 +33,12 @@ sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub
 
 flatpak install flathub org.mozilla.firefox
 
-
+# done
+echo " "
+echo " "
+echo " Snap removed"
+echo " "
+echo " & "
 echo " "
 echo " Firefox Flatpak installed "
 echo " "
